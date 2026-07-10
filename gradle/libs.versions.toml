@@ -23,4 +23,4 @@ fabric-loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric-l
 meteor-client = { module = "meteordevelopment:meteor-client", version.ref = "meteor" }
 
 [plugins]
-fabric-loom = { id = "net.fabricmc.fabric-loom", version.ref = "loom" }
+fabric-loom = { id = "fabric-loom", version.ref = "loom" }
