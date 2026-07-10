@@ -1,16 +1,19 @@
 pluginManagement {
     repositories {
-        maven {
-            name = "Fabric"
-            url = uri("https://maven.fabricmc.net/")
-        }
+        maven { url = uri("https://maven.fabricmc.net/") }
+        maven { url = uri("https://oss.sonatype.org/content/repositories/snapshots/") }
         mavenCentral()
         gradlePluginPortal()
     }
 }
 
-plugins {
-    id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+        maven { url = uri("https://maven.fabricmc.net/") }
+        maven { url = uri("https://maven.meteordev.org/releases") }
+        maven { url = uri("https://maven.meteordev.org/snapshots") }
+    }
 }
 
-rootProject.name = "addon-template"
+rootProject.name = "meteor-chunk-addon"
